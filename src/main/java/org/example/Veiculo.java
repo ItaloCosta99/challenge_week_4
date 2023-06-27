@@ -9,6 +9,17 @@ public class Veiculo {
     private boolean carga;
     private double capacidadeCarga;
 
+    public Veiculo(boolean motor, boolean volante, int qtdPassageiros, int qtdPortas, int qtdRodas, boolean carga, double capacidadeCarga, Combustivel combustivel) {
+        this.motor = motor;
+        this.volante = volante;
+        this.qtdPassageiros = qtdPassageiros;
+        this.qtdPortas = qtdPortas;
+        this.qtdRodas = qtdRodas;
+        this.carga = carga;
+        this.capacidadeCarga = capacidadeCarga;
+        this.combustivel = combustivel;
+    }
+
     private Combustivel combustivel;
 
     public boolean isMotor() {

@@ -4,8 +4,10 @@ public class Bicicleta extends Veiculo {
     private boolean motorEletrico;
     private boolean temBagageiro;
 
-    public Bicicleta() {
-        super();
+    public Bicicleta(boolean motor, boolean volante, int qtdPassageiros, int qtdPortas, int qtdRodas, boolean carga, double capacidadeCarga, Combustivel combustivel, boolean motorEletrico, boolean temBagageiro) {
+        super(motor, volante, qtdPassageiros, qtdPortas, qtdRodas, carga, capacidadeCarga, combustivel);
+        this.motorEletrico = motorEletrico;
+        this.temBagageiro = temBagageiro;
     }
 
     public boolean isMotorEletrico() {

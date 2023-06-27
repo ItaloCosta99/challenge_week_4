@@ -8,6 +8,15 @@ public class Combustivel {
     private boolean humano;
     private boolean animal;
 
+    public Combustivel(boolean gasolina, boolean alcool, boolean diesel, boolean eletricidade, boolean humano, boolean animal) {
+        this.gasolina = gasolina;
+        this.alcool = alcool;
+        this.diesel = diesel;
+        this.eletricidade = eletricidade;
+        this.humano = humano;
+        this.animal = animal;
+    }
+
     public boolean isGasolina() {
         return gasolina;
     }

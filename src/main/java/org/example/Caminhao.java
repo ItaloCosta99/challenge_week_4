@@ -3,8 +3,9 @@ package org.example;
 public class Caminhao extends Veiculo {
     private int qtdEixos;
 
-    public Caminhao() {
-        super();
+    public Caminhao(boolean motor, boolean volante, int qtdPassageiros, int qtdPortas, int qtdRodas, boolean carga, double capacidadeCarga, Combustivel combustivel, int qtdEixos) {
+        super(motor, volante, qtdPassageiros, qtdPortas, qtdRodas, carga, capacidadeCarga, combustivel);
+        this.qtdEixos = qtdEixos;
     }
 
     public int getQtdEixos() {
