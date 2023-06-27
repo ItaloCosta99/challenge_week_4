@@ -36,7 +36,7 @@ public class Main {
         carro.setQtdPassageiros(2);
         carro.setQtdPortas(0);
         carro.setCarga(false);
-        carro.setCapacidadeCarga(0.0);
+        carro.setCapacidadeCarga(300.0);
 
         Combustivel combustivelCarro = new Combustivel();
 
@@ -81,16 +81,16 @@ public class Main {
 
         charrete.setMotor(false);
         charrete.setVolante(false);
-        charrete.setQtdPassageiros(1);
+        charrete.setQtdPassageiros(2);
         charrete.setQtdPortas(0);
-        charrete.setCarga(false);
-        charrete.setCapacidadeCarga(0.0);
+        charrete.setCarga(true);
+        charrete.setCapacidadeCarga(150.0);
 
         Combustivel combustivelCharrete = new Combustivel();
 
         combustivelCharrete.setEletricidade(false);
-        combustivelCharrete.setDiesel(true);
-        combustivelCharrete.setAnimal(false);
+        combustivelCharrete.setDiesel(false);
+        combustivelCharrete.setAnimal(true);
         combustivelCharrete.setAlcool(false);
         combustivelCharrete.setGasolina(false);
         combustivelCharrete.setHumano(false);
@@ -113,11 +113,11 @@ public class Main {
         Combustivel combustivelCaminhao = new Combustivel();
 
         combustivelCaminhao.setEletricidade(false);
-        combustivelCaminhao.setDiesel(false);
+        combustivelCaminhao.setDiesel(true);
         combustivelCaminhao.setAnimal(false);
         combustivelCaminhao.setAlcool(false);
         combustivelCaminhao.setGasolina(false);
-        combustivelCaminhao.setHumano(true);
+        combustivelCaminhao.setHumano(false);
 
         caminhao.setCombustivel(combustivelCaminhao);
 
